@@ -1,0 +1,218 @@
+.formulario-publicacion {
+  background-color: #2d2e30;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(5, 173, 103, 0.6);
+  margin: 20px auto;
+  width: 90%;
+  max-width: 1200px;
+  color: beige;
+}
+
+.formulario-publicacion h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.grid-container > div {
+  background-color: rgba(40, 156, 117, 0);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(40, 177, 13, 0);
+}
+
+.grid-container label {
+  display: block;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  text-align: left;
+}
+
+.grid-container input,
+.grid-container select,
+.grid-container textarea {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f2f2;
+  color: #333;
+  font-size: 1rem;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+.grid-container input:focus,
+.grid-container select:focus,
+.grid-container textarea:focus {
+  outline: none;
+  background-color: #e9ffe8;
+  box-shadow: 0 0 0 2px #28a745;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+@media (max-width: 600px) {
+  .formulario-publicacion {
+    padding: 1rem;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+.btn-publicar {
+  background-color: #28a745;
+  color: #fff;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #28a745, 0 0 40px #1ebe5d;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-publicar:hover {
+  background-color: #32c85a;
+  box-shadow: 0 0 20px #32c85a, 0 0 50px #32c85a;
+  transform: scale(1.05);
+}
+/* ================RESULTADOS DEL FORMULARIO================*/
+.M{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+    color: aliceblue;
+    flex: 0 1 calc(50% - 40px);
+}
+.M > div{
+    background-color: rgba(0, 0, 0, 0.863);
+    text-align: center;
+    padding: 1rem;
+    border-radius: 5%;
+    box-shadow: 0 0 20px rgb(40, 177, 13);
+}
+.M > div > *{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.M > div > label{
+    display: block;
+    font-weight: bold;
+}
+.M > div > input,
+.M > div > select,
+.M > div > textarea{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #140e0e;              
+    border-radius: 0.25rem;
+}
+/* Estilos clave para el aviso de trabajo */
+        body {
+      background-color: #0c0c0c;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .contenedor-aviso {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .aviso-container {
+      flex: 0 1 calc(50% - 40px); /* ← Esto hace que haya 2 por fila */
+      max-width: 400px;
+      background: linear-gradient(145deg, #0f0f0f, #1a1a1a);
+      box-shadow: 0 0 20px #ffffff;
+      border-radius: 20px;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .aviso-container img {
+      width: 100px;
+      margin: 10px 0;
+    }
+
+    .aviso-container h1 {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #ffffff;
+    }
+
+    .aviso-container h2 {
+      font-size: 18px;
+      color: #02199b;
+      margin-bottom: 15px;
+    }
+
+    .aviso-container p {
+      font-size: 14px;
+      margin: 6px 0;
+      color: #ffffff;
+    }
+
+    .aviso-container b {
+      color: #c20101;
+    }
+
+    .whatsapp-btn {
+      margin-top: 15px;
+      display: inline-block;
+      background-color: #196937;
+      color: rgb(0, 0, 0);
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 900px) {
+      .aviso-container {
+        flex: 0 1 calc(50% - 40px);
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .aviso-container {
+        flex: 0 1 100%;
+      }
+    }
+    .mary{
+      margin-top: 10px;
+      font-size: 2rem;
+      color: #ffffff;
+      text-align: center;
+    }
+    

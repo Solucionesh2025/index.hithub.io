@@ -1,0 +1,50 @@
+.footer {
+  background-color: #1a1a1a;
+  color: #f2f2f2;
+  padding: 30px 20px 10px;
+  text-align: center;
+  box-shadow: 0 0 15px #04ff7b; /* Efecto LED */
+  border-top: 3px solid #04ff7b;
+}
+
+.footer-contenido {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.footer-logo h2 {
+  color: #04ff7b;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.footer-links a {
+  display: block;
+  margin: 5px 0;
+  color: #f2f2f2;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #04ff7b;
+  text-shadow: 0 0 5px #04ff7b;
+}
+
+.footer-contacto p {
+  margin: 5px 0;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  padding-top: 10px;
+  font-size: 13px;
+  color: #aaa;
+}
